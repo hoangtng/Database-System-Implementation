@@ -1,0 +1,6 @@
+BEGIN
+answers
+answers.tbl
+s_acctbal Double
+s_name String
+END

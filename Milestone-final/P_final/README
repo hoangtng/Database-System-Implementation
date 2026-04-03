@@ -1,0 +1,24 @@
+readme 
+=========
+Previous drivers are not included!
+
+This driver is for the final milestone.
+
+To compile the driver, type
+	make 
+
+To run the driver, type 'test.out' followed by the query # you wish to execute
+	./test.out [0-3]
+
+When you successfully complete the codebase, 
+the output of test.out should include 
+	the input SQL query, 
+	the query plan tree, 
+	the pipe information (i.e., the pipe ID and its memory address),
+	the query execution order (operator by operator), 
+	and the returning results.  
+
+Note:
+	In this codebase, the configuration of data paths is in QueryOptimizer.cc instead of test.h or test.cat. 
+	In QueryOptimizer.cc, you need to update the `tpch_dir` to the data/10M/ path and the `dbfile_dir` to the data/bin/ path of your system, 
+	just like what you did in previous milestones.  

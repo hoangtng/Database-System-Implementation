@@ -1,0 +1,17 @@
+
+SELECT r.r_name 
+FROM region AS r
+WHERE (r_regionkey < 3);
+
+SELECT s.s_name 
+FROM supplier AS s 
+WHERE (s.s_suppkey < 100);
+
+SELECT SUM (s.s_acctbal)
+FROM supplier AS s 
+WHERE (s.s_suppkey < 100);
+
+SELECT s.s_name, s.s_acctbal 
+FROM supplier AS s 
+WHERE (s.s_suppkey < 100) AND (s.s_acctbal > 1000.0);
+
